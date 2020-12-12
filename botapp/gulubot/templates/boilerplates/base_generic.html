@@ -1,0 +1,19 @@
+{% comment %} Boilerplate for the whole application. to be extened into all views {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include "./css.html" %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+
+    {% include "./js.html" %}
+</body>
+</html>
